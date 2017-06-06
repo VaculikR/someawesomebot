@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const oneLinerJoke = require('one-liner-joke');
 
 const inn = require('./token.js');
 
@@ -66,7 +67,9 @@ client.on('message', (message) => {
 
   if (message.content === 'somebody tell me a joke') {
     const channel = message.channel;
-    channel.send('Go fuck yourself ' + message.author);
+    let getRandomJoke = oneLinerJoke.getRandomJoke();
+
+    channel.send(message.author + ' ' + getRandomJoke.body);
     // channel.send('Putting a bell around a cow\'s neck to circumvent its stealthiness is just wrong. I say let them hunt.');
   }
 });
