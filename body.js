@@ -65,7 +65,7 @@ client.on('message', (message) => {
     channel.send('in development biatch, no time for silly bots atm.')
   }
 
-  if (message.content === 'somebody tell me a joke') {
+  if (message.content === 'joke pls') {
     const channel = message.channel;
     let getRandomJoke = oneLinerJoke.getRandomJoke();
 
