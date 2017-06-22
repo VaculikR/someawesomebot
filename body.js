@@ -2,7 +2,8 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const oneLinerJoke = require('one-liner-joke');
 
-const inn = require('./token.js');
+const tok = require('./token.js');
+const inn = tok.token
 
 let getMyFavouriteTime = function (datumTed) {
 
