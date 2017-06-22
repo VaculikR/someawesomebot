@@ -1,5 +1,5 @@
 module.exports = {
-  token: 'MzE4NzQyNzI1NzM2Mzk4ODU5.DA20Pw.kL25WoysopuoY42-wGMZ1HsfFAI',
+  token: 'MzE4NzQyNzI1NzM2Mzk4ODU5.DC2K3g.YD9sb024z5C0TIbTfFp_QrWLNVw',
   cn: {
     host: 'ec2-54-217-222-254.eu-west-1.compute.amazonaws.com',
     port: 5432,
