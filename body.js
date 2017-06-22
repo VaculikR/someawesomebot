@@ -4,6 +4,7 @@ const oneLinerJoke = require('one-liner-joke');
 
 const tok = require('./token.js');
 const inn = tok.token
+
 console.log(inn)
 let getMyFavouriteTime = function (datumTed) {
 
@@ -75,7 +76,7 @@ client.on('message', (message) => {
   }
 });
 
-client.login(inn.token);
+client.login(inn);
 
 
     // 
