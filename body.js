@@ -43,7 +43,7 @@ let getMyFavouriteTime = function (datumTed) {
 client.on('ready', () => {
   console.log('ready!');
   // let channel = client.channels.find('name', 'general');
-  // channel.send('Whattap human fags')
+  // channel.send('Long time no see fellatios')
 });
 
 client.on('message', (message) => {
@@ -65,11 +65,23 @@ client.on('message', (message) => {
     channel.send('in development biatch, no time for silly bots atm.')
   }
 
-  if (message.content === 'joke pls') {
+  if ((message.content).toLowerCase() === 'joke pls') {
+    console.log(message.author.username);
     const channel = message.channel;
     let getRandomJoke = oneLinerJoke.getRandomJoke();
-
     channel.send(message.author + ' ' + getRandomJoke.body);
+  
+    
+    // channel.send('Putting a bell around a cow\'s neck to circumvent its stealthiness is just wrong. I say let them hunt.');
+  }
+
+  if ((message.content).toLowerCase() === 'hi morty!') {
+    console.log(message.author.username);
+    const channel = message.channel;
+ 
+    channel.send('uh, hi Rick!');
+  
+    
     // channel.send('Putting a bell around a cow\'s neck to circumvent its stealthiness is just wrong. I say let them hunt.');
   }
 });
