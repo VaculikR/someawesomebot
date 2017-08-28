@@ -2,7 +2,7 @@
 
 const postgreLib = require('pg');
 const promise = require('bluebird');
-const theUrl = require('./token.js');
+const theUrl = require('./myVars.js');
 const url = theUrl.url;
 
 const pgp = require('pg-promise')({
@@ -18,12 +18,16 @@ postgreLib.defaults.poolSize = process.env.DATABASE_CONNECTIONS || 5;
 const db = pgp(url);
 
 (async function () {
-  const arrr = ['Peter', 'Jozko', 'Radek'];
+  let q = 'test'
+  await db.query("INSERT INTO test (message) values ('" + q + "')")
 
-  for (const q of arrr) {
-    console.log(q)
-    await db.query("INSERT INTO testable (name) values ('" + q + "')")
-  }
+
+  // const arrr = ['Peter', 'Jozko', 'Radek'];
+
+  // for (const q of arrr) {
+  //   console.log(q)
+  //   await db.query("INSERT INTO test (message) values ('" + q + "')")
+  // }
   /*let test = await db.query('SELECT * FROM testable')
   for (let o of test) {
     // console.log(o)
