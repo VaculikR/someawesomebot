@@ -3,7 +3,9 @@ const client = new Discord.Client();
 const oneLinerJoke = require('one-liner-joke');
 
 const tok = require('./myVars.js');
-const inn = tok.token
+// const inn = tok.token
+
+const inn = process.env.token
 
 console.log(inn)
 let getMyFavouriteTime = function (datumTed) {
@@ -44,7 +46,7 @@ let getMyFavouriteTime = function (datumTed) {
 
 client.on('ready', () => {
   console.log('ready!');
-  // let channel = client.channels.find('name', 'general');
+  let channel = client.channels.find('name', 'general');
   // channel.send('Long time no see fellatios')
 });
 
