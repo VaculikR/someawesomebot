@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const oneLinerJoke = require('one-liner-joke');
 
-const tok = require('./token.js');
+const tok = require('./myVars.js');
 const inn = tok.token
 
 console.log(inn)
