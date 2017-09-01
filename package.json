@@ -13,6 +13,7 @@
     "discord.js": "^11.1.0",
     "one-liner-joke": "^1.0.0",
     "pg": "^6.4.0",
-    "pg-promise": "^5.9.5"
+    "pg-promise": "^5.9.5",
+    "prompt": "^1.0.0"
   }
 }
